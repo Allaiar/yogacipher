@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
 import Header from "./header";
-import Furniture from "./furniture";
-import HeaderDown from "./headerDown";
 import SectionCard from "./sectionCard";
-function HomePage({ furniture, chair, furnitureRef, furnitureChairRef }) {
+import HeaderDown from "./headerDown";
+function HomePage({ furnitureRef }) {
 
   const scrollToComponent = () => {
     furnitureRef.current.scrollIntoView({ behavior: "smooth" });
@@ -12,9 +11,8 @@ function HomePage({ furniture, chair, furnitureRef, furnitureChairRef }) {
   return (
     <div className="animate__animated animate__fadeIn">
       <Header scrollToComponent={scrollToComponent} />
-      <SectionCard />
       <div ref={furnitureRef}>
-        <Furniture furnitureChairRef={furnitureChairRef} furnitureRef={furnitureRef} furniture={furniture} chair={chair}/>
+        <SectionCard furnitureRef={furnitureRef}/>
       </div>
       <HeaderDown scrollToComponent={scrollToComponent} />
     </div>

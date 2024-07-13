@@ -1,38 +1,28 @@
 import React from "react";
-import rightimg from "./img/photo_5_2024-01-16_15-53-01.jpg";
-import "./style.css"
+import "./style.css";
 
 function Header({ scrollToComponent }) {
   return (
-    <header className="header lg:flex justify-center lg:mt-12">
-      <div className="header-left flex flex-col justify-between p-[6vw]">
-        <div className="flex flex-col gap-y-8 items-start">
-          <h1 className="header-title lg:w-[35vw]">
-            Индивидуальный дизайн в каждой детали – ваш дом с нами
+    <header
+      id="up"
+      className="bg-center bg-fixed bg-no-repeat bg-cover h-screen relative"
+    >
+      <div className="h-screen bg-opacity-50 bg-black flex items-center justify-center">
+        <div className="mx-2 text-center">
+          <h1 className="text-gray-100 font-extrabold text-4xl xs:text-7xl md:text-9xl">
+            <span className="text-white">Issyk-Kul</span> 4-Day Yoga Retreat
           </h1>
-          <button
-            onClick={scrollToComponent}
-            className="header-button text-[16px] py-[16px] px-[32px] hidden lg:flex"
-          >
-            Посмотреть коллекцию
-          </button>
-        </div>
-        <div>
-          <p className="header-text font-sans lg:w-[40vw] mt-16">
-            Погрузитесь в уют и тепло дерева с нашей коллекцией. Мы предлагаем
-            индивидуальный дизайн в каждой детали, создавая мебель, которая
-            привносит уникальность в ваш дом. Откройте новую эру стиля с нами.
+          <div className="inline-flex">
+            <a href="https://wa.me/+996552708069?text=I%20want%20to%20learn%20more%20about%20the%20Issyk-Kul%204-Day%20Yoga%20Retreat">
+              <button className="p-[2vw] my-14 mx-2 bg-transparent border-2 bg-indigo-200 bg-opacity-75 hover:bg-opacity-100 border-slate-300 rounded hover:text-slate-700 hover:bg-slate-200 font-bold text-slate-300 shadow-md transition duration-500 md:text-6xl">
+                Register Now
+              </button>
+            </a>
+          </div>
+          <p onClick={scrollToComponent} className=" cursor-pointer bounce text-center text-white text-6xl ">
+          <ion-icon name="chevron-down-outline"></ion-icon>
           </p>
-          <button
-            onClick={scrollToComponent}
-            className="header-button text-[16px] py-[16px] px-[32px] hidden max-lg:flex w-[100%] text-center justify-center mt-10"
-          >
-            Посмотреть коллекцию
-          </button>
         </div>
-      </div>
-      <div className="header-right hidden lg:flex">
-        <img src={rightimg} alt="img" className="w-[40vw]" />
       </div>
     </header>
   );
