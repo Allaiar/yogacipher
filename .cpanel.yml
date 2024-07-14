@@ -2,5 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/yogaizdu/public_html/
-    - rm -rf $DEPLOYPATH/*
     - /bin/cp -r * $DEPLOYPATH
