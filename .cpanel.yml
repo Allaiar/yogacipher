@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/yogaizdu/public_html/
-    - /bin/cp * $DEPLOYPATH
+ - export BUILD_DIR=/home/yogaizdu/public/index.html
+    - ln -sfn $BUILD_DIR $DEPLOYPATH
