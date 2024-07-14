@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/yogaizdu/public_html/
+    - export DEPLOYPATH=/home/yogaizdu/repositories/public
     - /bin/cp * $DEPLOYPATH
