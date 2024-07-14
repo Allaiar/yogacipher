@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/yogaizdu/repositories/yogacipher
+    - export DEPLOYPATH=/home/yogaizdu/public_html/
     - /bin/cp * $DEPLOYPATH
